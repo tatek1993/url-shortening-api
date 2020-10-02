@@ -3,6 +3,7 @@
 // Primary
 $cyan:  hsl(180, 66%, 49%);
 $dark-violet: hsl(257, 27%, 26%);
+$light-cyan:  hsla(180, 66%, 49%, 0.616);
 
 // Secondary
 $red:  hsl(0, 87%, 67%);
@@ -16,12 +17,13 @@ $dark-violet: hsl(260, 8%, 14%);
 
 .button {
     border-radius: 20px;
-    padding: 5px 10px;
+    padding: 8px 13px;
     margin: 10px;
     color: $grayish-violet;
+    color: white;
+    background-color: $cyan;
     &:hover {
-        color: white;
-        background-color: $cyan;
+        background-color: $light-cyan;
     }
     
 }
@@ -43,7 +45,7 @@ $dark-violet: hsl(260, 8%, 14%);
     p {
         font-weight: 700;
         color: $grayish-violet;
-        margin: 10px;
+        margin: 20px;
         &:hover {
             color: $dark-blue;
         }
@@ -80,5 +82,46 @@ $dark-violet: hsl(260, 8%, 14%);
     .desktop-landing-txt {
         width: 100%;
         font-size: 25px;
+        color: $grayish-violet;
+        
     }
+}
+
+.link-bar-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 5%;
+}
+
+.link-bar {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url('./images/bg-shorten-desktop.svg');
+    background-color: $dark-blue;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: -1;
+
+    input {
+        width: 70%;
+        height: 70%;
+        border-radius: 10px;
+    }
+}
+
+.input-button {
+    background-color: $cyan;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 5px;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+
 }
