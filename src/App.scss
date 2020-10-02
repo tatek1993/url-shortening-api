@@ -13,12 +13,25 @@ $grayish-violet: hsl(257, 7%, 63%);
 $dark-blue: hsl(255, 11%, 22%);
 $dark-violet: hsl(260, 8%, 14%);
 
+
+.button {
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 10px;
+    color: $grayish-violet;
+    &:hover {
+        color: white;
+        background-color: $cyan;
+    }
+    
+}
 // HEADER
 
 .desktop-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 5px 125px;
 }
 
 .desktop-nav {
@@ -26,9 +39,10 @@ $dark-violet: hsl(260, 8%, 14%);
     flex-direction: row;
     align-items: center;
     font-size: 16px;
-    font-weight: 700;
-    color: $grayish-violet;
+   
     p {
+        font-weight: 700;
+        color: $grayish-violet;
         margin: 10px;
         &:hover {
             color: $dark-blue;
@@ -42,14 +56,29 @@ $dark-violet: hsl(260, 8%, 14%);
     align-items: center;
     font-size: 16px;
     font-weight: 700;
-    p {
-        border-radius: 20px;
-        padding: 5px 10px;
-        margin: 10px;
-        color: $grayish-violet;
-        &:hover {
-            color: white;
-            background-color: $cyan;
-        }
+}
+
+// LANDING
+.landing {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.desktop-landing-info {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 125px;
+    align-items: center;
+
+    h1 {
+        font-size: 70px;
+        font-weight: 900;
+        color: $dark-violet;
+        line-height: 3.4rem;
+    }
+    .desktop-landing-txt {
+        width: 100%;
+        font-size: 25px;
     }
 }

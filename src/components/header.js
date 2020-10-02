@@ -12,9 +12,9 @@ const Header = () => {
                 <p>Pricing</p>
                 <p>Resources</p>
             </div>
-            <div className="desktop-nav-btns">
-                <p>Login</p>
-                <p>Sign Up</p>
+            <div className="desktop-nav-btns ">
+                <p className='button'>Login</p>
+                <p className='button'>Sign Up</p>
             </div>
         </div>
     )
