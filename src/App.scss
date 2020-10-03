@@ -123,5 +123,38 @@ $dark-violet: hsl(260, 8%, 14%);
     align-items: center;
     font-weight: 700;
     font-size: 20px;
+}
 
+// STATS
+.stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $gray;
+}
+
+.desktop-stats-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.desktop-stats-bottom {
+    display: flex;
+}
+
+.stat-container {
+    background-color: white;
+
+    h2 {
+        color: $dark-blue;
+        font-weight: 700;
+    }
+    p {
+        color: $grayish-violet;
+        font-size: 18px;;
+    }
 }
