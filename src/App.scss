@@ -144,6 +144,8 @@ $dark-violet: hsl(260, 8%, 14%);
 
 .desktop-stats-bottom {
     display: flex;
+    height: 400px;
+    margin: 10px 125px;
 }
 
 .stat-container {
@@ -155,6 +157,28 @@ $dark-violet: hsl(260, 8%, 14%);
     }
     p {
         color: $grayish-violet;
-        font-size: 18px;;
+        font-size: 18px;
     }
+}
+
+.stat-box {
+    background-color: white;
+    margin: 10px;
+    width: 30%;
+    padding: 30px;
+}
+
+.box-1 {
+    align-self: flex-start;
+    
+}
+
+.box-2 {
+    align-self: center;
+   
+}
+
+.box-3 {
+    align-self: flex-end;
+   
 }
